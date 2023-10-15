@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Antisense Transcription Genes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/logo.jpg" alt="基因协会Logo"  
+      width="60"
+      height="600"
+      style="float: left;">
+      <h1>Antisense Transcription Genes</h1>
+      
+
+      <nav>
+        <ul>
+          <li><span>Homepage</span></li>
+          <li><a href="#">Start</a></li>
+          <li><a href="#">Picture</a></li>
+          <li><a href="#">Equipment</a></li>
+          <li><a href="#">Forums</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+ 
+
+    <main>
+
+      <article>
+        <h2>Introduction</h2>
+
+        <p>Retrovirus relies extensively on the expression of the sense virus genes. 
+          However, the retrovirus protein encoded from the antisense gene is getting attention 
+          because of its special biological significance. With the analysis of one species of 
+          retrovirus lentiviruses including HIV-1, we try to predict the antisense transcription 
+          genes and their encoded proteins. 
+        </p>  
+        <p> To screen out potential antisense transcription genes ,
+          we used these criterions: the length of sequence , promoter site and poly-A site, 
+          phylogenetic analysis and protein secondary and tertiary structure prediction for the 
+          antisense sequences which is complementary sense gene. This research will help to deepen 
+          our understanding of the biological function and evolutionary relationship between antisense  genes and antisense proteins.
+        </p>
+      </article>
+
+      <aside class="image-container">
+        <h2>Gallery</h2>
+
+        <a href="./images/favorite-1.png"><img src="./images/favorite-1.png" alt="gene position"></a>
+        <a href="./images/favorite-2.png"><img src="./images/favorite-2.png" alt="protein"></a>
+        <a href="./images/favorite-3.png"><img src="./images/favorite-3.png" alt="protein"></a>
+        <p>click image to enlarge!</p>
+        
+      </aside>
+    </main>
+
+    <canvas id="myCanvas"></canvas>
+    <script>
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+    
+      // 设置canvas的宽度和高度
+      canvas.width = 600;
+      canvas.height = 150;
+    
+      
+      const text = 'PROTEIN PREDICTION';
+      const fontSize = 48;
+      const font = `${fontSize}px Arial`;
+      const x = canvas.width / 2;
+      const y = canvas.height / 2;
+    
+      ctx.font = font;
+      ctx.fillStyle = 'white';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+    
+      // 添加阴影效果
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+      ctx.shadowBlur = 10;
+      ctx.shadowOffsetX = 5;
+      ctx.shadowOffsetY = 5;
+    
+      ctx.fillText(text, x, y);
+    </script>
+
+
+
+    
+    <main>
+
+        
+      <table>
+        
+          <tr>
+            <th>Species</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Amino acid sequence length</th>
+            
+          </tr>
+          
+          <tr>
+            <td>BIV</td>
+            <td>6524</td>
+            <td>6932</td>
+            <td>136</td>
+            
+          </tr>
+          <tr>
+            <td>CAEV</td>
+            <td>8560(env)</td>
+            <td>8827</td>
+            <td>89</td>
+          </tr>
+          <tr>
+            <td>EIAV</td>
+            <td>7299(env)</td>
+            <td>7548</td>
+            <td>83</td>
+          </tr>
+          <tr>
+            <td>FIV</td>
+            <td>8503</td>
+            <td>8812</td>
+            <td>103</td>
+          </tr>
+          <tr>
+            <td>HIV-2</td>
+            <td>7551</td>
+            <td>7601</td>
+            <td>122</td>
+          </tr>
+          <tr>
+            <td>JDV</td>
+            <td>6119</td>
+            <td>6347</td>
+            <td>76</td>
+          </tr>
+    </table>
+    
+    <h2>
+      For more information, browse <a href="https://services.healthtech.dtu.dk/service.php?Promoter-2.0">Promoter-2.0</a>!
+
+    </h2>
+
+    </main>
+    <footer>
+    <p></p>
+    <svg width="100%" height="100%">
+      <rect width="100%" height="100%" fill="grey" />
+      <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
+      <polygon points="120,0 240,225 0,225" fill="yellow"/>
+      <text x="50" y="100" font-family="Verdana" font-size="55"
+            fill="white" stroke="black" stroke-width="2">
+              Gene!
+      </text>
+    </svg>
+  
+    </footer>
+
+  </body>
+</html>
